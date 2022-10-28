@@ -1,0 +1,32 @@
+---
+title: "mymap"
+author: "I.Malu"
+date: "2022-10-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My map assignment created with Leaflet
+
+```{r }
+library(leaflet)
+```
+
+
+
+
+```{r}
+
+
+my_map <- leaflet() %>% 
+  addTiles()
+my_map <- my_map %>%
+  addMarkers(lat= 43.128002, lng= -77.665474, 
+             popup="This is my home town Airport")
+my_map
+```
+
+
